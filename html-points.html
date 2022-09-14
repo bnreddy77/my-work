@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-practice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <style>
+        *{
+            padding:0px;
+            margin:0px;font-family: sans-serif;
+        }
+        body{
+            background-color: #000000;
+            color:white;
+        }
+        header{
+            display:grid;
+            grid-template-columns: 4fr 5fr 3fr;
+            background-color: #ff0000;
+            padding:15px;
+            font-weight: bold;
+            font-size:20px;
+            color: white;
+
+        }
+        .center span{
+            margin:20px;
+        }
+        .right{
+            margin-left: 200px;
+        }
+        .center span:hover{
+            background-color:#000000;
+            color:white;
+            padding:15px;
+            border-radius: 30px;
+            border: 2px solid white;
+            
+        }
+        .navbar{
+            background-color:white;
+            color: #ff0000;
+            text-align:center;
+            padding: 10px;
+            
+        }
+        .navbar span{
+            margin: 15px;
+
+        }
+        .navbar span:hover{
+            background-color:#ff0000;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid #000000;
+            
+        }
+        .asidebar{
+            background-color:#ff0000;
+            width: 6%;
+            padding: 3px;
+            height:60%;
+            border-radius: 10px;
+            border:3px solid white;
+        }
+        .asidebar div{
+            margin-bottom: 30px;
+            padding-top:10px;
+            margin-left: 1px;
+            
+        }
+        .asidebar div:hover{
+            background-color:#ff0000;
+            color: white;
+            padding: 15px;
+            width: 50px;
+            margin-right: 1px;
+            border-radius: 10px;
+            border: 3px solid #000000;
+
+        }
+        .asidebar:hover{
+            background-color:white;
+            color: #000000;
+            border-radius: 10px;
+            border: 3px solid #ff0000;
+        }
+        .articlebar{
+            background-color: white;
+            color: #ff0000;
+            width: 50%;
+            margin-left: 600px;
+            padding: 20px;
+            margin-top: -200px;
+            border-radius: 40px;
+            border: 3px solid #ff0000;
+        }
+        .articlebar h1{
+            text-align: center;
+            color: #000000;
+            margin-bottom:  10px;
+        }
+        .s-articlebar{
+            background-color: #ff0000;
+            margin-bottom: 10px;
+            color:white;
+            padding: 15px;
+            border-radius: 40px ;
+            border: 5px solid #000000;
+        }
+        .s-articlebar h2{
+            margin-bottom:5px;
+            
+        }
+        .dialog{
+            background-color: #ff0000;
+            width: 20%;
+            padding: 10px;
+            border-radius:20px;
+            margin-top: 80px;
+            color: #000000;
+            border: 3px solid white;
+        }
+        .dialog div{
+            color: white;
+            margin-top: 10px;
+
+        }
+        dialog{
+            margin-left: 200px;
+            color: #000000;
+        }
+    
+            
+        
+        .figur{
+            display: flex;
+            margin-left:340px;
+            margin-top:-210px;
+            margin-bottom: 40px;
+        }
+        .sfigur{
+            width: 10%;
+            background-color:#ff0000;
+            padding: 10px;
+            border-radius:20px;
+            margin-top: 40px;
+            display:flex;
+            margin-left: 25px;
+            text-align: center;
+            border:3px solid white;
+        }
+        .sfigur img{
+            border-radius: 20px;
+            border:3px solid white;
+        
+        }
+        .sfigur h4{
+            font-size: 20px;
+            margin-bottom:  10px;
+        }
+        .socialbar nav div {
+            font-size: 30px;
+            color:#000000;
+            margin-bottom: 10px;
+            margin-right:  130px;
+        }
+        .socialbar nav {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius:30px;
+            border: 3px solid #ff0000;
+        }
+        .pre-tag{
+            background-color:white;
+            color:#ff0000;
+            width:20%;
+            border-radius:20px;
+            padding: 10px;
+            margin-top:10px;
+            margin-left: 50px;
+            border:3px solid #ff0000;
+        }
+        .pre-tag h1{
+            text-align:center;
+            margin-bottom: 10px;
+        }
+        .code-variable-tag{
+            background-color:white;
+            color: #ff0000;
+            width: 20%;
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 550px;
+            margin-top: -150px;
+            border:3px solid #ff0000;
+        }
+        .code-variable-tag h1{
+            margin-bottom: 10px;
+        }
+        .address-tag{
+            background-color:white;
+            color:#ff0000;
+            width:15%;
+            padding: 20px;
+            border-radius: 20px;
+            border: 3px solid #ff0000;
+            margin-left: 1050px;
+            margin-top: -170px;
+        }
+        .address-tag h1{
+            margin-bottom: 10px;
+            text-align: center;
+
+        }
+        .datalist{
+            background-color:#ff0000;
+            width: 15%;
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid white;
+            margin-top: 50px;
+            margin-left: 40px;
+
+
+        }
+        .datalist h1{
+            margin-top: -15px;
+            margin-bottom:  10px;
+            text-align: center;
+        }
+        .datalist dt{
+            margin-left: -20px;
+            margin-bottom: 10px;
+            margin-top:10px;
+            background-color: #000000;
+            width: 30%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+        .details-summary{
+            background-color: #ff0000;
+            width: 20%;
+            padding: 15px;
+            border-radius: 20px;
+            border: 2px solid white;
+            margin-left: 550px;
+            margin-top: -310px;
+        }
+        .details-summary h1{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .details-summary summary{
+            margin: 10px;
+            background-color: #000000;
+            width: 70%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+
+        }
+        .details-summary p{
+            margin-bottom: 10px;
+        }
+        .ordered-list{
+            background-color:#ff0000;
+            width:15%;
+            margin-top: 90px;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid white;
+            margin-left: 1050px;
+            margin-top: -230px;
+
+        
+        }
+        .ordered-list ol{
+            columns:2;
+            column-gap: 50px;
+          
+          text-align: justify;
+          margin-top: 10px;
+        }
+        .ordered-list li{
+            margin: 5px;
+        }
+        .fieldset-legend{
+            background-color:white;
+            color: #ff0000;
+            margin-top:90px;
+            width: 50%;
+            padding:20px;
+            border-radius: 40px;
+            border: 5px solid #ff0000;
+            margin-left: 100px;
+        }
+        .fieldset-legend h1{
+            text-align: center
+        }
+        .fieldset-legend input{
+            color: #ff0000;
+            background-color:#000000;
+            margin:20px;
+        }
+        .fieldset-legend button{
+            margin-left: 80px;
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #ff0000;
+        }
+        form{
+            text-align: center;
+            
+        }
+        .unordered-list{
+            background-color:#ff0000;
+            width:15%;
+            margin-top: 90px;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid white;
+            margin-left: 1050px;
+            margin-top: -285px;
+
+        
+        }
+        .unordered-list ul{
+            columns:2;
+            column-gap: 50px;
+          
+          text-align: justify;
+          margin-top: 10px;
+        }
+        .unordered-list li{
+            margin: 5px;
+        }
+        .unordered-list h1{
+            text-align: center;
+        }
+        .main-card img{
+            margin-top: 100px;
+            width:60%;
+            height: 100%;
+            margin-left: 260px;
+            border-radius: 20px;
+            border: 1px solid white;
+        }
+        .card .main-cards{
+            width:10%;
+            height:250px;
+            text-align: center;
+            background-color:whitesmoke;
+            color:black;
+            border: 2px solid #ff0000;
+            margin: 30px;
+            margin-left:34px;
+
+        }
+        .card .cards{
+            display: flex;
+            margin: 10px;
+            margin-left: 85px;
+            margin-top: -200px;
+
+        }
+        .card .cards2{
+            display: flex;
+            margin: 10px;
+            margin-left: 85px;
+            margin-top: -10px;
+
+        }
+        .alon-hedding{
+            text-align: center;
+            margin-top:-750px;
+            margin-left: 200px;
+            font-size: 20px;
+        }
+        .card .main-cards h3{
+            margin-bottom: 10px;
+        }
+        .tables{
+            margin-top: 680px;
+            margin-left: 100px;
+            
+    
+        }
+        .tables div{
+            text-align: center;
+            margin-right: 750px;
+            font-size:20px;
+        }
+        .tables table{
+            width:500px;
+            height:300px;
+            background-color: #ff0000;
+        }
+        .tables2{
+            margin-left: 800px;
+            margin-top: -330px;
+        }
+        .tables2 table{
+            background-color: #ff0000;
+        }
+        .tables2 img{
+            border-radius: 40px;
+            border: 4px solid #000000;
+            width: 90%;
+        }
+        .tables2 div{
+            margin-left:200px;
+            font-size: 20px;
+        }
+        .iframe{
+            margin-top: 30px;
+        }
+        .iframe h1{
+            text-align: center;
+            margin-left: 600px;
+            margin-bottom: 20px;
+            background-color: white;
+            color: #000000;
+            width:15%;
+            padding: 10px;
+            border-radius: 40px;
+            border: 3px solid #ff0000;
+        }
+        .iframe iframe{
+            margin: 30px;
+            border-radius: 20px;
+            border: 4px solid #ff0000;
+        }
+        .iframe .iframe1, .iframe2{
+            margin-left: 50px;
+        }
+        .iframes{
+            background-color:white;
+            border-radius:50px;
+            border: 4px solid #ff0000;
+        } 
+        .marquee {
+            margin-top: 20px;
+            background-color:#ff0000;
+            padding: 10px;
+            width: 50%;
+            margin-left: 330px;
+            border-radius: 40px;
+            border: 3px solid white;
+        }
+        .marquee marquee a{
+            text-decoration:none;
+            color:white;
+            font-size: 40px;
+        }
+        .song {
+            background-color:white;
+            width: 400px;
+            margin-left: 140px;
+            border-radius:50px;
+            border: 4px solid #ff0000;
+            margin-top:-3700px;
+
+        }
+        .song iframe {
+            margin-left: 50px;
+            margin-top: 20px;
+            border-radius:30px;
+            border: 4px solid #ff0000;
+            
+        }
+        .song h1{
+            color:black;
+            margin-left: 15px;
+        }
+        .html{
+           
+            
+        } 
+        .html h1{
+            
+            margin-top: -365px;
+            padding: 15px;
+            background-color:#ff0000;
+            width:260px;
+            border-radius: 40px;
+            margin-left: 190px;
+            border:3px solid white;
+            
+            
+
+        }
+        .footer {
+            margin-top:3735px;
+            background-color:white;
+            color: #000000;
+            padding: 10px;
+            border-radius: 100px;
+            border: 4px solid #ff0000;
+        }
+        .footer h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: #000000;
+            color: white;
+            width: 15%;
+            padding: 10px;
+            border-radius: 40px;
+            border: 3px solid #ff0000;
+            margin-left: 530px;
+        }
+        .s-footer {
+            display: grid;
+            grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
+            margin-left: 110px;
+        }
+        .footer-1 div {
+            background-color: #000000;
+            color: white;
+            margin:1opx;
+            width: 22%;
+            margin-bottom:20px;
+            padding: 15px;
+            border-radius: 25px;
+            border: 3px solid #ff0000;
+        }
+        .footer-2 div {
+            background-color: #000000;
+            color: white;
+            margin:1opx;
+            width: 22%;
+            margin-bottom:20px;
+            padding: 15px;
+            border-radius: 20px;
+            border-radius: 25px;
+            border: 3px solid #ff0000;
+        }
+        .footer-4 div {
+            background-color: #000000;
+            color: white;
+            margin:1opx;
+            width: 22%;
+            margin-bottom:20px;
+            padding: 15px;
+            border-radius: 20px;
+            border-radius: 25px;
+            border: 3px solid #ff0000;
+        }
+        .footer-5 div {
+            background-color: #000000;
+            color: white;
+            margin:1opx;
+            width: 22%;
+            margin-bottom:20px;
+            padding: 15px;
+            border-radius: 20px;
+            border-radius: 25px;
+            border: 3px solid #ff0000;
+        }
+        .footer-3 div {
+            background-color: #ff0000;
+            color:white;
+            width: 37%;
+            padding:20px;
+            font-size: 30px;
+            border-radius: 40px;
+            border: 5px solid #000000;
+            margin-left:50px;
+            margin-top: 125px;
+        }
+
+        
+            
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left"> maharshi </div>
+        <div class="center">
+            <span>aatadu</span>
+            <span>pokiri</span>
+            <span>guru</span>
+            <span>sanba</span>
+        </div>
+        <div class="right">nature</div>
+    </header>
+    <nav class="navbar">
+        <span>MAHESH</span>
+        <span>RAM</span>
+        <span>VENKY</span>
+        <span>NTR</span>
+    </nav>
+    <aside class="asidebar">
+        <div>puri</div>
+        <div>trivikram</div>
+        <div>rajamouli</div>
+        <div>neel</div>
+
+    </aside>
+    <article class="articlebar">
+        <h1>Movie Industry</h1>
+        <article class="s-articlebar">
+            <h2>Tollywood</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatem quia nemo vero non consectetur quas ratione eos ut! Nulla.</p>
+
+        </article>
+        <article class="s-articlebar">
+            <h2>Bollywood</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatem quia nemo vero non consectetur quas ratione eos ut! Nulla.</p>
+            
+        </article>
+        <article class="s-articlebar">
+            <h2>Kollywood</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatem quia nemo vero non consectetur quas ratione eos ut! Nulla.</p>
+            
+        </article>
+
+    </article>
+    <section class="dialog">
+        <h1>Favorat Cricket Player</h1>
+        <div class="s-dialog">Rohit</div>
+        <div class="s-dialog">Kohli</div>
+        <dialog open>Dhoni</dialog>
+        <div class="s-dialog">Dhoni</div>
+        <div class="s-dialog">Jadeja</div>
+    </section>
+    <section>
+        <div class="figur">
+          <div class="sfigur">  
+        <figur>
+            <img src="../src/images/team_03.jpg" width="100%">
+            <figcaption class="figcaption">
+                <h4>team</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima, tempora vitae impedit ullam beatae.</p>
+            </figcaption>
+        </figur>
+        </div>
+        <div class="sfigur">
+
+
+        <figur >
+            <img src="../src/images/team_03.jpg" width="100%">
+            <figcaption class="figcaption">
+                <h4>team</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima, tempora vitae impedit ullam beatae.</p>
+            </figcaption>
+        </figur>
+        </div>
+        <div class="sfigur">
+        <figur >
+            <img src="../src/images/team_03.jpg" width="100%">
+            <figcaption class="figcaption">
+                <h4>team</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima, tempora vitae impedit ullam beatae.</p>
+            </figcaption>
+        </figur>
+        </div>
+
+        <div class="sfigur">
+            <figur >
+                <img src="../src/images/team_03.jpg" width="100%">
+                <figcaption class="figcaption">
+                    <h4>team</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima, tempora vitae impedit ullam beatae.</p>
+                </figcaption>
+            </figur>
+            </div>
+
+            <div class="sfigur">
+                <figur >
+                    <img src="../src/images/team_03.jpg" width="100%">
+                    <figcaption class="figcaption">
+                        <h4>team</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima, tempora vitae impedit ullam beatae.</p>
+                    </figcaption>
+                </figur>
+                </div>
+
+                <div class="sfigur">
+                    <figur >
+                        <img src="../src/images/team_03.jpg" width="100%">
+                        <figcaption class="figcaption">
+                            <h4>team</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minima, tempora vitae impedit ullam beatae.</p>
+                        </figcaption>
+                    </figur>
+                    </div>
+        </div>
+    </section>
+    <section class="socialbar">
+    
+        <nav>
+            <div class="bi bi-facebook"></div>
+            <div class="bi bi-twitter"></div>
+            <div class="bi bi-linkedin"></div>
+            <div class="bi bi-instagram"></div>
+            <div class="bi bi-youtube"></div>
+        </nav>
+    
+    </section>
+    <section class="pre-tag">
+        <h1>PRE-TAG</h1>
+        <pre>
+            hello    *()_blank
+            djdjkjjknjknckj       jpg
+            lklljkjlkjlkjs
+            ?      to use>
+        </pre>
+    </section>
+    <section class="code-variable-tag">
+        <h1>CODE-VARIABLE TAG</h1>
+        <P><mark>CODE-TAG:</mark>&nbsp; &nbsp; &nbsp; &nbsp;</nbsp:>lorem ipsum <code>dolor sit amet consectetur</code> adipisicing elit. Sapiente voluptas, <code></P>
+        <p><mark>VAR-TAG:</mark>&nbsp; &nbsp; &nbsp; &nbsp;lorem ipsum <var>dolor sit amet consectetur,</var> adipisicing elit. Voluptas in quasi et, <code>quaerat min</p>
+    </section>
+
+    <section class="address-tag">
+        <h1>ADDRESS-TAG</h1>
+        <address>naresh it institute,</address>
+        <address>maitrivanam,</address>
+        <address>ameerpet,</address>
+        <address>hyderbad,telangan,</address>
+        <address>pin code:202020.</address>
+    </section>
+    <section class="datalist">
+        <h1>dl-dt-dd-tag</h1>
+        <dl>
+            <dt>DHONI</dt>
+               <dd>batsman/wecket keepar</dd>
+
+            <dt>ROHIT</dt>
+                <dd>batsman/captain</dd>
+
+            <dt>JADEJA</dt>
+               <dd>batsman/bowler</dd>
+        </dl>
+    </section>
+    <section class="details-summary">
+        <h1>DETAILS-SUMMARY</h1>
+        <details>
+            <summary>INDIA CAPTAINS</summary>
+            <P>MS dhoni</P>
+            <p>V kohli</p>
+            <P>R sherma</P>
+        </details>
+        <details>   
+            <summary>ENGLAND CAPTAINS</summary>
+            <P>E morgan</P>
+            <p>J buttlar</p>
+            <P>B stroks</P>
+        </details>
+        <details>    
+            <summary>AUSTRALIA CAPTAINS</summary>
+            <P>R ponting</P>
+            <p>S smith</p>
+            <P>A finch</P>
+        </details>
+    </section>
+    <section class="ordered-list">
+        <h1>ORDERED-LIST</h1>
+        <h3>india players</h3>
+        <div>
+            <ol>
+                <li>rohit</li>
+                <li>rahul</li>
+                <li>kohli</li>
+                <li>dinesh</li>
+                <li>risabh</li>
+                <li>pandya</li>
+
+                <li>dhoni</li>
+                <li>jadeja</li>
+                <li>chahal</li>
+                <li>buvi</li>
+                <li>bumrah</li>
+
+                
+
+            </ol>
+        
+        </div>
+        
+
+    </section>
+    <section class="fieldset-legend">
+        <h1>FIELDSET-LEGEND</h1>
+        <fieldset class="your-deatails">
+            
+            <legend>Your Deatails</legend>
+          <form>  
+           <div> 
+            <label for="your name">ypur name</label>
+            <input type="text" name="your name">
+           </div>
+           <div>  
+            <label  for="your number">your number</label>
+            <input  type="text" name="your number">
+           </div>
+           <div> 
+            <lable for="your password">password</lable>
+            <input type="password" name="your password">
+           </div>
+           <div>  
+            <button>login</button>
+            </div>
+           </form> 
+        </fieldset>
+    </section>
+    <section class="unordered-list">
+        <h1>UL-LIST</h1>
+        <h3>CSK players</h3>
+        <div>
+            <ul>
+                <li>ruturaj</li>
+                <li>uthappa</li>
+                <li>mohin</li>
+                <li>rayudu</li>
+                <li>pritori</li>
+                <li>jadeja</li>
+
+            </ul>
+        
+        </div>
+        <div>
+            <ul>
+                <li>dhoni</li>
+                <li>bravo</li>
+                <li>deepak</li>
+                <li>dheekshana</li>
+                <li>jai assam</li>
+
+            </ul>
+        </div>
+
+    </section>
+    <section class="card">
+        <div class="main-card">
+            <img src="../src/images/image2/alon.jpg" width="80%" height="50%"title="ALONE">
+        </div>
+        <div class="cards">
+            <div class="main-cards">
+                <img src="../src/images/image2/alon1.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon2.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon3.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon4.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon5.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon6.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+        </div>
+
+        <div class="cards2">
+            <div class="main-cards">
+                <img src="../src/images/image2/alon1.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon2.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon3.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon4.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon5.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+
+            <div class="main-cards">
+                <img src="../src/images/image2/alon6.jpg" width="100%" height="50%"title="ALONE">
+                <h3>ALON BOY</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam.</p>
+            </div>
+        </div>
+    </section>
+    <section class="alon-hedding">
+        <h1>ALONE IS BEST</h1>
+        <h3>AND</h3>
+        <h2>IS PERFECT</h2>
+    </section>
+    <section class="tables">
+        <div>NORMAL TABLE</div>
+        <table frame="box" rules="all">
+            <tr>
+                <th>s.no</th>
+                <th>india batsman</th>
+                <th>age</th>
+                <th>s.no</th>
+                <th>india bowlers</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>rohit</th>
+                <th>35</th>
+                <th>7</th>
+                <th>jadeja</th>
+                <th>33</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>rahul</th>
+                <th>28</th>
+                <th>8</th>
+                <th>kumar</th>
+                <th>33</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>kohli</th>
+                <th>34</th>
+                <th>9</th>
+                <th>bumrah</th>
+                <th>27</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>kartik</th>
+                <th>36</th>
+                <th>10</th>
+                <th>bisnow</th>
+                <th>24</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>pant</th>
+                <th>24</th>
+                <th>11</th>
+                <th>malik</th>
+                <th>23</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>pandya</th>
+                <th>28</th>
+                <th>12</th>
+                <th>chahar</th>
+                <th>26</th>
+            </tr>
+        </table>
+    
+    </section>
+    <section class="tables2">
+        <div>SPECIAL TABLE</div>
+        <table frame="box" rules="all" width="500px">
+            <tr>
+                <th colspan="2">indian team menter</th>
+            </tr>
+            <tr width="300px" height="300px">
+                <th>
+                    <img src="../src/images/image2/dhonim.jpg" width="100%" title="DHONI">
+                </th>
+                <td>
+                    <table frame="box" rules="all" width="300px" height="300px">
+                        <tr>
+                            <th>name</th>
+                            <th>teams</th>
+                            <th>cups</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">M S DHONI</th>
+                            <th>india</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            
+                            <th>csk</th>
+                            <th>4</th>
+                        </tr>
+                    </table>    
+                </td>
+
+            </tr>
+
+        </table>
+    </section>
+    
+    <section class="iframe">
+        <h1>IFRAMES</h1>
+      <div class="iframes" > 
+       <div class="iframe1"> 
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/rBLCjz8as0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/xLtfisGoMeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/16BVm7breWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/s0tefh9uMec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+      </div>
+      
+      <div class="iframe2"> 
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/s0tefh9uMec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/6-BYG0Fn1og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/rBLCjz8as0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="250px" height="150px" src="https://www.youtube.com/embed/xLtfisGoMeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </div>
+     </div> 
+    </section>
+    <section class="marquee">
+        <marquee scrollamount="20">
+           <a href="https://www.youtube.com/watch?v=FDjmEhdV_t4" target="_blank"> Please subscribe our channel CLICK ON</a>
+        </marquee>
+    </section>
+    <section class="song">
+
+    
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/y3tfpBxoci4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>LISTEN THE SONG TO SCROLL </h1>
+   </section> 
+   <section class="html">
+    <h1>HTML ALL EXAMPLES </h1>
+   </section>
+   <section class="footer">
+    <h1>HTML POINTS</h1>
+    <footer class="s-footer">
+        <div class="footer-1">
+            <div>header</div>
+            <div>navbar</div>
+            <div>asidebar</div>
+            <div>article</div>
+            <div>dialog</div>
+        </div>
+
+        <div class="footer-2">
+            <div>figur</div>
+            <div>figcaption</div>
+            <div>pre</div>
+            <div>code-variable </div>
+            <div>address</div>
+        </div>
+
+        <div class="footer-3">
+            <div>B N Reddy</div>
+        </div>    
+
+        <div class="footer-4">
+            <div>datalist</div>
+            <div>details-summary</div>
+            <div>orderdlist</div>
+            <div>fieldset-legend</div>
+            <div>unorderedlist</div>
+        </div>
+
+        <div class="footer-5">
+            <div>cards</div>
+            <div>form</div>
+            <div>iframe</div>
+            <div>marquee</div>
+            <div>tables</div>
+        </div>
+         
+
+    </footer>
+   </section>
+</body>
+</html>
